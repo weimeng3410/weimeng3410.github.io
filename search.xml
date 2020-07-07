@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2018/06/20/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+      <tags>
+        <tag>Linux相关</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows Server 2019 container容器化-Docker安装</title>
+    <url>/2019/06/26/test1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="windows系统安装docker教程"><a href="#windows系统安装docker教程" class="headerlink" title="windows系统安装docker教程"></a>windows系统安装docker教程</h1><h2 id="一、启用服务器Hyper-V-Containers特性"><a href="#一、启用服务器Hyper-V-Containers特性" class="headerlink" title="一、启用服务器Hyper-V,Containers特性"></a><strong>一、启用服务器Hyper-V,Containers特性</strong></h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Install-WindowsFeature -Name Hyper-V,Containers -IncludeAllSubFeature -IncludeManagementTools</span><br></pre></td></tr></table></figure>
+
+<h2 id="二、Install-Docker-EE"><a href="#二、Install-Docker-EE" class="headerlink" title="二、Install Docker EE"></a><strong>二、Install Docker EE</strong></h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Install-Module DockerMSFTProvider</span><br><span class="line">Import-Module -Name DockerMSFTProvider -Force</span><br><span class="line">Import-Packageprovider -Name DockerMSFTProvider -Force</span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading.gif" data-src="/2019/06/26/test1/%E5%AE%89%E8%A3%851.png" alt></p>
+<p>通过Find-Package docker确认是否安装成功</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Find-Package docker</span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading.gif" data-src="/2019/06/26/test1/%E5%AE%89%E8%A3%852.png" alt></p>
+<h2 id="三、安装Docker"><a href="#三、安装Docker" class="headerlink" title="三、安装Docker"></a><strong>三、安装Docker</strong></h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Install-Package -Name Docker -Source DockerDefault</span><br></pre></td></tr></table></figure>
+
+<p><img src= "/img/loading.gif" data-src="/2019/06/26/test1/%E5%AE%89%E8%A3%853.png" alt></p>
+<h2 id="四、重启后则可以正常使用，可以执行-docker-命令查看"><a href="#四、重启后则可以正常使用，可以执行-docker-命令查看" class="headerlink" title="四、重启后则可以正常使用，可以执行 docker 命令查看"></a><strong>四、重启后则可以正常使用，可以执行 docker 命令查看</strong></h2><p><img src= "/img/loading.gif" data-src="/2019/06/26/test1/%E5%AE%89%E8%A3%854.png" alt></p>
+]]></content>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test2</title>
+    <url>/2020/06/26/test2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+  </entry>
+  <entry>
+    <title>test3</title>
+    <url>/2020/06/26/test3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+  </entry>
+  <entry>
+    <title>test4</title>
+    <url>/2020/06/26/test4/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+  </entry>
+  <entry>
+    <title>testnew</title>
+    <url>/2020/07/08/testnew/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+  </entry>
+</search>

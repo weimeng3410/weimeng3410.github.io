@@ -1,0 +1,14 @@
+var full_page = document.getElementsByClassName("full_page");
+if (full_page.length != 0) {
+  full_page[0].style.background = "transparent";
+}
+
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
+        default;
+}
+a,
+img {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+        default;
+}
